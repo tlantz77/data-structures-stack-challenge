@@ -11,12 +11,17 @@ describe Stack do
   end
 
   it "can return the top element of the stack" do
-    expect(stack.top).to eq(stack.first)
+    stack.push("a")
+    stack.push("b")
+    stack.push("c")
+    expect(stack.top).to eq("c")
+    expect(stack.size).to eq(3)
   end
 
-  # it "can push an element to the top of the stack" do
-  #   stack.push("topthing")
-  #
-  # end
+  it "can push an element to the top of the stack" do
+    stack.push("topthing")
+    expect(stack.top).to eq("topthing")
+    expect(stack.size).to eq(1)
+  end
 
 end

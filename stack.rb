@@ -10,5 +10,11 @@ class Stack < LinkedList
     insert_first(element)
   end
 
+  def pop
+    popped_element = top
+    remove_first
+    popped_element
+  end
+
 
 end

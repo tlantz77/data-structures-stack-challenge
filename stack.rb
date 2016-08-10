@@ -16,5 +16,9 @@ class Stack < LinkedList
     popped_element
   end
 
+  def empty?
+    @size == 0
+  end
+
 
 end

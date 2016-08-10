@@ -38,4 +38,10 @@ describe Stack do
     expect(stack.pop).to eq("c")
   end
 
+  it "can check if that stack is empty" do
+    empty_stack = Stack.new
+    expect(stack.empty?).to be false
+    expect(empty_stack.empty?).to be true
+  end
+
 end
